@@ -82,8 +82,7 @@
 | Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
 </details>
 
-<details>
-<summary>AppCategories</summary>
+<details><summary>AppCategories</summary>
 
 | Module   | Added | Type   | Endpoint                         |
 | -------- | :---: | ------ | -------------------------------- |
@@ -93,8 +92,7 @@
 | Tunes    | ❌    | GET    | appCategories/{id}/subcategories |
 </details>
 
-<details>
-<summary>AppEncryptionDeclarations</summary>
+<details><summary>AppEncryptionDeclarations</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -104,8 +102,7 @@
 | Tunes    | ❌    | POST   | appEncryptionDeclarations/{id}/relationships/builds |
 </details>
 
-<details>
-<summary>AppInfoLocalizations</summary>
+<details><summary>AppInfoLocalizations</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
@@ -115,8 +112,7 @@
 | Tunes    | ✅    | DELETE | appInfoLocalizations/{id} |
 </details>
 
-<details>
-<summary>AppInfos</summary>
+<details><summary>AppInfos</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
@@ -131,8 +127,7 @@
 | Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryTwo |
 </details>
 
-<details>
-<summary>AppPreOrders</summary>
+<details><summary>AppPreOrders</summary>
 
 | Module   | Added | Type   | Endpoint          |
 | -------- | :---: | ------ | ----------------- |
@@ -142,8 +137,7 @@
 | Tunes    | ❌    | DELETE | appPreOrders/{id} |
 </details>
 
-<details>
-<summary>AppPreviewSets</summary>
+<details><summary>AppPreviewSets</summary>
 
 | Module   | Added | Type   | Endpoint                                      |
 | -------- | :---: | ------ | --------------------------------------------- |
@@ -154,8 +148,8 @@
 | Tunes    | ✅    | PATCH  | appPreviewSets/{id}/relationships/appPreviews |
 | Tunes    | ✅    | GET    | appPreviewSets/{id}/appPreviews               |
 </details>
-<details>
-<summary>AppPreviews</summary>
+
+<details><summary>AppPreviews</summary>
 
 | Module   | Added | Type   | Endpoint         |
 | -------- | :---: | ------ | ---------------- |
@@ -164,8 +158,8 @@
 | Tunes    | ✅    | PATCH  | appPreviews/{id} |
 | Tunes    | ✅    | DELETE | appPreviews/{id} |
 </details>
-<details>
-<summary>AppPricePoints</summary>
+
+<details><summary>AppPricePoints</summary>
 
 | Module   | Added | Type   | Endpoint                      |
 | -------- | :---: | ------ | ----------------------------- |
@@ -173,8 +167,8 @@
 | Tunes    | ❌    | GET    | appPricePoints/{id}           |
 | Tunes    | ❌    | GET    | appPricePoints/{id}/territory |
 </details>
-<details>
-<summary>AppPriceTiers</summary>
+
+<details><summary>AppPriceTiers</summary>
 
 | Module   | Added | Type   | Endpoint                       |
 | -------- | :---: | ------ | ------------------------------ |
@@ -182,15 +176,15 @@
 | Tunes    | ✅    | GET    | appPriceTiers/{id}             |
 | Tunes    | ✅    | GET    | appPriceTiers/{id}/pricePoints |
 </details>
-<details>
-<summary>AppPrices</summary>
+
+<details><summary>AppPrices</summary>
 
 | Module   | Added | Type   | Endpoint           |
 | -------- | :---: | ------ | ------------------ |
 | Tunes    | ✅    | GET    | /v1/appPrices/{id} |
 </details>
-<details>
-<summary>AppScreenshotSets</summary>
+
+<details><summary>AppScreenshotSets</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -201,8 +195,8 @@
 | Tunes    | ✅    | PATCH  | appScreenshotSets/{id}/relationships/appScreenshots |
 | Tunes    | ✅    | GET    | appScreenshotSets/{id}/appScreenshots               |
 </details>
-<details>
-<summary>AppScreenshots</summary>
+
+<details><summary>AppScreenshots</summary>
 
 | Module   | Added | Type   | Endpoint            |
 | -------- | :---: | ------ | ------------------- |
@@ -211,8 +205,8 @@
 | Tunes    | ✅    | PATCH  | appScreenshots/{id} |
 | Tunes    | ✅    | DELETE | appScreenshots/{id} |
 </details>
-<details>
-<summary>AppStoreReviewAttachments</summary>
+
+<details><summary>AppStoreReviewAttachments</summary>
 
 | Module   | Added | Type   | Endpoint                       |
 | -------- | :---: | ------ | ------------------------------ |
@@ -221,8 +215,8 @@
 | Tunes    | ✅    | PATCH  | appStoreReviewAttachments/{id} |
 | Tunes    | ✅    | DELETE | appStoreReviewAttachments/{id} |
 </details>
-<details>
-<summary>AppStoreReviewDetails</summary>
+
+<details><summary>AppStoreReviewDetails</summary>
 
 | Module   | Added | Type   | Endpoint                                             |
 | -------- | :---: | ------ | ---------------------------------------------------- |
@@ -231,8 +225,8 @@
 | Tunes    | ✅    | PATCH  | appStoreReviewDetails/{id}                           |
 | Tunes    | ✅    | GET    | appStoreReviewDetails/{id}/appStoreReviewAttachments |
 </details>
-<details>
-<summary>AppStoreVersionLocalizations</summary>
+
+<details><summary>AppStoreVersionLocalizations</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -243,8 +237,8 @@
 | Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}/appPreviewSets    |
 | Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}/appScreenshotSets |
 </details>
-<details>
-<summary>AppStoreVersionPhasedReleases</summary>
+
+<details><summary>AppStoreVersionPhasedReleases</summary>
 
 | Module   | Added | Type   | Endpoint                           |
 | -------- | :---: | ------ | ---------------------------------- |
@@ -260,8 +254,8 @@
 | Tunes    | ✅    | POST   | appStoreVersionSubmissions      |
 | Tunes    | ✅    | DELETE | appStoreVersionSubmissions/{id} |
 </details>
-<details>
-<summary>AppStoreVersions</summary>
+
+<details><summary>AppStoreVersions</summary>
 
 | Module   | Added | Type   | Endpoint                                           |
 | -------- | :---: | ------ | -------------------------------------------------- |
@@ -280,8 +274,8 @@
 | Tunes    | ✅    | GET    | appStoreVersions/{id}/idfaDeclaration              |
 | Tunes    | ✅    | GET    | appStoreVersions/{id}/routingAppCoverage           |
 </details>
-<details>
-<summary>Apps</summary>
+
+<details><summary>Apps</summary>
 
 | Module   | Added | Type   | Endpoint                                |
 | -------- | :---: | ------ | --------------------------------------- |
@@ -304,199 +298,203 @@
 | Tunes    | ✅    | GET    | /v1/apps/{id}/preOrder                  |
 | Tunes    | ✅    | GET    | /v1/apps/{id}/preReleaseVersions        |
 | Tunes    | ✅    | GET    | /v1/apps/{id}/prices                    |
-
 </details>
-<details>
-<summary>BetaAppLocalizations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>BetaAppReviewDetails</summary>
+<details><summary>BetaAppLocalizations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module     | Added | Type   | Endpoint                      |
+| ---------- | :---: | ------ | ----------------------------- |
+| TestFlight | ✅    | GET    | betaAppLocalizations          |
+| TestFlight | ✅    | POST   | betaAppLocalizations          |
+| TestFlight | ✅    | GET    | betaAppLocalizations/{id}     |
+| TestFlight | ✅    | PATCH  | betaAppLocalizations/{id}     |
+| TestFlight | ✅    | DELETE | betaAppLocalizations/{id}     |
+| TestFlight | ✅    | GET    | betaAppLocalizations/{id}/app |
 </details>
-<details>
-<summary>BetaAppReviewSubmissions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>BetaBuildLocalizations</summary>
+<details><summary>BetaAppReviewDetails</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
 </details>
-<details>
-<summary>BetaGroups</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>BetaLicenseAgreements</summary>
+<details><summary>BetaAppReviewSubmissions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
 </details>
-<details>
-<summary>BetaTesterInvitations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>BetaTesters</summary>
+<details><summary>BetaBuildLocalizations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
 </details>
-<details>
-<summary>BuildBetaDetails</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>BuildBetaNotifications</summary>
+<details><summary>BetaGroups</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
 </details>
-<details>
-<summary>Builds</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+<details><summary>BetaLicenseAgreements</summary>
+
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
 </details>
-<details>
-<summary>BundleIdCapabilities</summary>
+
+<details><summary>BetaTesterInvitations</summary>
+
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
+</details>
+
+<details><summary>BetaTesters</summary>
+
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
+</details>
+
+<details><summary>BuildBetaDetails</summary>
+
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
+</details>
+
+<details><summary>BuildBetaNotifications</summary>
+
+| Module     | Added | Type   | Endpoint |
+| ---------- | :---: | ------ | -------- |
+| TestFlight | ✅    | GET    |          |
+</details>
+
+<details><summary>Builds</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>BundleIds</summary>
+
+<details><summary>BundleIdCapabilities</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>Certificates</summary>
+
+<details><summary>BundleIds</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>Devices</summary>
+
+<details><summary>Certificates</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>EndUserLicenseAgreements</summary>
+
+<details><summary>Devices</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>FinanceReports</summary>
+
+<details><summary>EndUserLicenseAgreements</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>IdfaDeclarations</summary>
+
+<details><summary>FinanceReports</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>InAppPurchases</summary>
+
+<details><summary>IdfaDeclarations</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>PreReleaseVersions</summary>
+
+<details><summary>InAppPurchases</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>Profiles</summary>
+
+<details><summary>PreReleaseVersions</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>RoutingAppCoverages</summary>
+
+<details><summary>Profiles</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>SalesReports</summary>
+
+<details><summary>RoutingAppCoverages</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>Territories</summary>
+
+<details><summary>SalesReports</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>UserInvitations</summary>
+
+<details><summary>Territories</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>Users</summary>
+
+<details><summary>UserInvitations</summary>
+
+| Module   | Added | Type   | Endpoint |
+| -------- | :---: | ------ | -------- |
+| Users    | ✅    | GET    |  |
+</details>
+
+<details><summary>Users</summary>
+
+| Module   | Added | Type   | Endpoint |
+| -------- | :---: | ------ | -------- |
+| Users    | ✅    | GET    |  |
+</details>
+
+<details><summary>DiagnosticSignatures</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
 | Tunes    | ✅    | GET    |  |
 </details>
-<details>
-<summary>DiagnosticSignatures</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
-</details>
-<details>
-<summary>GameCenterEnabledVersions</summary>
+<details><summary>GameCenterEnabledVersions</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
