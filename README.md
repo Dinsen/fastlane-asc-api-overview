@@ -255,23 +255,56 @@
 <details>
 <summary>AppStoreVersionSubmissions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                        |
+| -------- | :---: | ------ | ------------------------------- |
+| Tunes    | ✅    | POST   | appStoreVersionSubmissions      |
+| Tunes    | ✅    | DELETE | appStoreVersionSubmissions/{id} |
 </details>
 <details>
 <summary>AppStoreVersions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                           |
+| -------- | :---: | ------ | -------------------------------------------------- |
+| Tunes    | ✅    | POST   | appStoreVersions                                   |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}                              |
+| Tunes    | ✅    | PATCH  | appStoreVersions/{id}                              |
+| Tunes    | ✅    | DELETE | appStoreVersions/{id}                              |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/ageRatingDeclaration         |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreReviewDetail         |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionLocalizations |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionPhasedRelease |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionSubmission    |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/relationships/build          |
+| Tunes    | ✅    | PATCH  | appStoreVersions/{id}/relationships/build          |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/build                        |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/idfaDeclaration              |
+| Tunes    | ✅    | GET    | appStoreVersions/{id}/routingAppCoverage           |
 </details>
 <details>
 <summary>Apps</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                |
+| -------- | :---: | ------ | --------------------------------------- |
+| Tunes    | ✅    | GET    | /v1/apps                                |
+| Tunes    | ✅    | GET    | /v1/apps/{id}                           |
+| Tunes    | ✅    | PATCH  | /v1/apps/{id}                           |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/appInfos                  |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/appStoreVersions          |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/availableTerritories      |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/betaAppLocalizations      |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/betaAppReviewDetail       |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/betaGroups                |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/betaLicenseAgreement      |
+| Tunes    | ✅    | DELETE | /v1/apps/{id}/relationships/betaTesters |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/builds                    |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/endUserLicenseAgreement   |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/gameCenterEnabledVersions |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/inAppPurchases            |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/perfPowerMetrics          |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/preOrder                  |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/preReleaseVersions        |
+| Tunes    | ✅    | GET    | /v1/apps/{id}/prices                    |
+
 </details>
 <details>
 <summary>BetaAppLocalizations</summary>
