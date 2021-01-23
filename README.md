@@ -1,7 +1,5 @@
 
-### Plugins
-
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+### App Store Connect API v1.2 implementation overview
 
 | Module | Implemented | Type | Endpoint |
 | ------ | ------ | ------ | ------ |
@@ -76,78 +74,7 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 | Tunes | X | POST | sandboxTesters |
 | Tunes | X | DELETE | sandboxTesters/#{sandbox_tester_id} |
 | Tunes | X | GET | territories |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+
 
 <details><summary>AgeRatingDeclarations</summary>
 
@@ -158,289 +85,336 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 
 <details>
 <summary>AppCategories</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 
 <details>
 <summary>AppEncryptionDeclarations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 
 <details>
 <summary>AppInfoLocalizations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 
 <details>
 <summary>AppInfos</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 
 <details>
 <summary>AppPreOrders</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 
 <details>
 <summary>AppPreviewSets</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppPreviews</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppPricePoints</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppPriceTiers</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppPrices</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppScreenshotSets</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppScreenshots</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreReviewAttachments</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreReviewDetails</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreVersionLocalizations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreVersionPhasedReleases</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreVersionSubmissions</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>AppStoreVersions</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Apps</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaAppLocalizations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaAppReviewDetails</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaAppReviewSubmissions</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaBuildLocalizations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaGroups</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaLicenseAgreements</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaTesterInvitations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BetaTesters</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BuildBetaDetails</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BuildBetaNotifications</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Builds</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BundleIdCapabilities</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>BundleIds</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Certificates</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Devices</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>EndUserLicenseAgreements</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>FinanceReports</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>IdfaDeclarations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>InAppPurchases</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>PreReleaseVersions</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Profiles</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>RoutingAppCoverages</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>SalesReports</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Territories</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>UserInvitations</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>Users</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>DiagnosticSignatures</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 <details>
 <summary>GameCenterEnabledVersions</summary>
+
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |          |
+| Tunes    | ✅    | GET    |  |
 </details>
 
