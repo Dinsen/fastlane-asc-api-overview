@@ -3,7 +3,6 @@
 
 | Module | Implemented | Type | Endpoint |
 | ------ | ------ | ------ | ------ |
-| Tunes | X | PATCH | ageRatingDeclarations/#{age_rating_declaration_id} |
 | Tunes | X | GET | appStoreVersions/#{app_store_version_id}/ageRatingDeclaration |
 | Tunes | X | PATCH | apps/#{app_id} |
 | Tunes | X | GET | apps/#{app_id}/dataUsages |
@@ -86,9 +85,12 @@
 <details>
 <summary>AppCategories</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                         |
+| -------- | :---: | ------ | -------------------------------- |
+| Tunes    | ❌    | GET    | appCategories                    |
+| Tunes    | ❌    | GET    | appCategories/{id}               |
+| Tunes    | ❌    | GET    | appCategories/{id}/parent        |
+| Tunes    | ❌    | GET    | appCategories/{id}/subcategories |
 </details>
 
 <details>
