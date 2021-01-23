@@ -109,8 +109,8 @@
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ❌    | POST   | appInfoLocalizations |
-| Tunes    | ❌    | GET    | appInfoLocalizations/{id} |
+| Tunes    | ✅    | POST   | appInfoLocalizations |
+| Tunes    | ✅    | GET    | appInfoLocalizations/{id} |
 | Tunes    | ✅    | PATCH  | appInfoLocalizations/{id} |
 | Tunes    | ✅    | DELETE | appInfoLocalizations/{id} |
 </details>
@@ -120,30 +120,49 @@
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Tunes    | ✅    | GET    | appInfos/{id} |
+| Tunes    | ✅    | PATCH  | appInfos/{id} |
+| Tunes    | ✅    | GET    | appInfos/{id}/appInfoLocalizations |
+| Tunes    | ✅    | GET    | appInfos/{id}/primaryCategory |
+| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryOne |
+| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryTwo |
+| Tunes    | ✅    | GET    | appInfos/{id}/secondaryCategory |
+| Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryOne |
+| Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryTwo |
 </details>
 
 <details>
 <summary>AppPreOrders</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint          |
+| -------- | :---: | ------ | ----------------- |
+| Tunes    | ❌    | POST   | appPreOrders      |
+| Tunes    | ❌    | GET    | appPreOrders/{id} |
+| Tunes    | ❌    | PATCH  | appPreOrders/{id} |
+| Tunes    | ❌    | DELETE | appPreOrders/{id} |
 </details>
 
 <details>
 <summary>AppPreviewSets</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                      |
+| -------- | :---: | ------ | --------------------------------------------- |
+| Tunes    | ✅    | POST   | appPreviewSets                                |
+| Tunes    | ✅    | GET    | appPreviewSets/{id}                           |
+| Tunes    | ✅    | DELETE | appPreviewSets/{id}                           |
+| Tunes    | ✅    | GET    | appPreviewSets/{id}/relationships/appPreviews |
+| Tunes    | ✅    | PATCH  | appPreviewSets/{id}/relationships/appPreviews |
+| Tunes    | ✅    | GET    | appPreviewSets/{id}/appPreviews               |
 </details>
 <details>
 <summary>AppPreviews</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint         |
+| -------- | :---: | ------ | ---------------- |
+| Tunes    | ✅    | POST   | appPreviews      |
+| Tunes    | ✅    | GET    | appPreviews/{id} |
+| Tunes    | ✅    | PATCH  | appPreviews/{id} |
+| Tunes    | ✅    | DELETE | appPreviews/{id} |
 </details>
 <details>
 <summary>AppPricePoints</summary>
