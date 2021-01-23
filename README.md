@@ -96,9 +96,12 @@
 <details>
 <summary>AppEncryptionDeclarations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                            |
+| -------- | :---: | ------ | --------------------------------------------------- |
+| Tunes    | ❌    | GET    | appEncryptionDeclarations                           |
+| Tunes    | ❌    | GET    | appEncryptionDeclarations/{id}                      |
+| Tunes    | ❌    | GET    | appEncryptionDeclarations/{id}/app                  |
+| Tunes    | ❌    | POST   | appEncryptionDeclarations/{id}/relationships/builds |
 </details>
 
 <details>
@@ -106,7 +109,10 @@
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Tunes    | ❌    | POST   | appInfoLocalizations |
+| Tunes    | ❌    | GET    | appInfoLocalizations/{id} |
+| Tunes    | ✅    | PATCH  | appInfoLocalizations/{id} |
+| Tunes    | ✅    | DELETE | appInfoLocalizations/{id} |
 </details>
 
 <details>
