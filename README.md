@@ -167,65 +167,90 @@
 <details>
 <summary>AppPricePoints</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                      |
+| -------- | :---: | ------ | ----------------------------- |
+| Tunes    | ✅    | GET    | appPricePoints                |
+| Tunes    | ❌    | GET    | appPricePoints/{id}           |
+| Tunes    | ❌    | GET    | appPricePoints/{id}/territory |
 </details>
 <details>
 <summary>AppPriceTiers</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                       |
+| -------- | :---: | ------ | ------------------------------ |
+| Tunes    | ✅    | GET    | appPriceTiers                  |
+| Tunes    | ✅    | GET    | appPriceTiers/{id}             |
+| Tunes    | ✅    | GET    | appPriceTiers/{id}/pricePoints |
 </details>
 <details>
 <summary>AppPrices</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint           |
+| -------- | :---: | ------ | ------------------ |
+| Tunes    | ✅    | GET    | /v1/appPrices/{id} |
 </details>
 <details>
 <summary>AppScreenshotSets</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                            |
+| -------- | :---: | ------ | --------------------------------------------------- |
+| Tunes    | ✅    | POST   | appScreenshotSets                                   |
+| Tunes    | ✅    | GET    | appScreenshotSets/{id}                              |
+| Tunes    | ✅    | DELETE | appScreenshotSets/{id}                              |
+| Tunes    | ✅    | GET    | appScreenshotSets/{id}/relationships/appScreenshots |
+| Tunes    | ✅    | PATCH  | appScreenshotSets/{id}/relationships/appScreenshots |
+| Tunes    | ✅    | GET    | appScreenshotSets/{id}/appScreenshots               |
 </details>
 <details>
 <summary>AppScreenshots</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint            |
+| -------- | :---: | ------ | ------------------- |
+| Tunes    | ✅    | POST   | appScreenshots      |
+| Tunes    | ✅    | GET    | appScreenshots/{id} |
+| Tunes    | ✅    | PATCH  | appScreenshots/{id} |
+| Tunes    | ✅    | DELETE | appScreenshots/{id} |
 </details>
 <details>
 <summary>AppStoreReviewAttachments</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                       |
+| -------- | :---: | ------ | ------------------------------ |
+| Tunes    | ✅    | POST   | appStoreReviewAttachments      |
+| Tunes    | ✅    | GET    | appStoreReviewAttachments/{id} |
+| Tunes    | ✅    | PATCH  | appStoreReviewAttachments/{id} |
+| Tunes    | ✅    | DELETE | appStoreReviewAttachments/{id} |
 </details>
 <details>
 <summary>AppStoreReviewDetails</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                             |
+| -------- | :---: | ------ | ---------------------------------------------------- |
+| Tunes    | ✅    | POST   | appStoreReviewDetails                                |
+| Tunes    | ✅    | GET    | appStoreReviewDetails/{id}                           |
+| Tunes    | ✅    | PATCH  | appStoreReviewDetails/{id}                           |
+| Tunes    | ✅    | GET    | appStoreReviewDetails/{id}/appStoreReviewAttachments |
 </details>
 <details>
 <summary>AppStoreVersionLocalizations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                            |
+| -------- | :---: | ------ | --------------------------------------------------- |
+| Tunes    | ✅    | POST   | appStoreVersionLocalizations                        |
+| Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}                   |
+| Tunes    | ✅    | PATCH  | appStoreVersionLocalizations/{id}                   |
+| Tunes    | ✅    | DELETE | appStoreVersionLocalizations/{id}                   |
+| Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}/appPreviewSets    |
+| Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}/appScreenshotSets |
 </details>
 <details>
 <summary>AppStoreVersionPhasedReleases</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                           |
+| -------- | :---: | ------ | ---------------------------------- |
+| Tunes    | ✅    | POST   | appStoreVersionPhasedReleases      |
+| Tunes    | ✅    | PATCH  | appStoreVersionPhasedReleases/{id} |
+| Tunes    | ✅    | DELETE | appStoreVersionPhasedReleases/{id} |
 </details>
 <details>
 <summary>AppStoreVersionSubmissions</summary>
