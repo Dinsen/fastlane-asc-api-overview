@@ -346,37 +346,70 @@
 
 <details><summary>BetaGroups</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                                      |
+| ---------- | :---: | ------ | --------------------------------------------- |
+| TestFlight | ✅    | GET    | /v1/betaGroups                                |
+| TestFlight | ✅    | POST   | /v1/betaGroups                                |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}                           |
+| TestFlight | ✅    | PATCH  | /v1/betaGroups/{id}                           |
+| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}                           |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/app                       |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | POST   | /v1/betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/betaTesters               |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | POST   | /v1/betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/builds                    |
 </details>
 
 <details><summary>BetaLicenseAgreements</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                       |
+| ---------- | :---: | ------ | ------------------------------ |
+| TestFlight | ✅    | GET    | betaLicenseAgreements          |
+| TestFlight | ✅    | GET    | betaLicenseAgreements/{id}     |
+| TestFlight | ✅    | PATCH  | betaLicenseAgreements/{id}     |
+| TestFlight | ✅    | GET    | betaLicenseAgreements/{id}/app |
 </details>
 
 <details><summary>BetaTesterInvitations</summary>
 
 | Module     | Added | Type   | Endpoint |
 | ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| TestFlight | ✅    | POST   | /v1/betaTesterInvitations |
 </details>
 
 <details><summary>BetaTesters</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                                  |
+| ---------- | :---: | ------ | ----------------------------------------- |
+| TestFlight | ✅    | GET    | betaTesters                               |
+| TestFlight | ✅    | POST   | betaTesters                               |
+| TestFlight | ✅    | GET    | betaTesters/{id}                          |
+| TestFlight | ✅    | DELETE | betaTesters/{id}                          |
+| TestFlight | ✅    | GET    | betaTesters/{id}/relationships/apps       |
+| TestFlight | ✅    | DELETE | betaTesters/{id}/relationships/apps       |
+| TestFlight | ✅    | GET    | betaTesters/{id}/apps                     |
+| TestFlight | ✅    | GET    | betaTesters/{id}/relationships/betaGroups |
+| TestFlight | ✅    | PATCH  | betaTesters/{id}/relationships/betaGroups |
+| TestFlight | ✅    | DELETE | betaTesters/{id}/relationships/betaGroups |
+| TestFlight | ✅    | GET    | betaTesters/{id}/betaGroups               |
+| TestFlight | ✅    | GET    | betaTesters/{id}/relationships/builds     |
+| TestFlight | ✅    | PATCH  | betaTesters/{id}/relationships/builds     |
+| TestFlight | ✅    | DELETE | betaTesters/{id}/relationships/builds     |
+| TestFlight | ✅    | GET    | betaTesters/{id}/builds                   |
 </details>
 
 <details><summary>BuildBetaDetails</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                    |
+| ---------- | :---: | ------ | --------------------------- |
+| TestFlight | ✅    | GET    | buildBetaDetails            |
+| TestFlight | ✅    | GET    | buildBetaDetails/{id}       |
+| TestFlight | ✅    | PATCH  | buildBetaDetails/{id}       |
+| TestFlight | ✅    | GET    | buildBetaDetails/{id}/build |
 </details>
 
 <details><summary>BuildBetaNotifications</summary>
