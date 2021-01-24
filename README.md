@@ -77,8 +77,8 @@
 
 <details><summary>AgeRatingDeclarations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
+| Module   | Added | Type   | Endpoint                                           |
+| -------- | :---: | ------ | -------------------------------------------------- |
 | Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
 </details>
 
@@ -104,9 +104,9 @@
 
 <details><summary>AppInfoLocalizations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | POST   | appInfoLocalizations |
+| Module   | Added | Type   | Endpoint                  |
+| -------- | :---: | ------ | ------------------------- |
+| Tunes    | ✅    | POST   | appInfoLocalizations      |
 | Tunes    | ✅    | GET    | appInfoLocalizations/{id} |
 | Tunes    | ✅    | PATCH  | appInfoLocalizations/{id} |
 | Tunes    | ✅    | DELETE | appInfoLocalizations/{id} |
@@ -114,15 +114,15 @@
 
 <details><summary>AppInfos</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    | appInfos/{id} |
-| Tunes    | ✅    | PATCH  | appInfos/{id} |
-| Tunes    | ✅    | GET    | appInfos/{id}/appInfoLocalizations |
-| Tunes    | ✅    | GET    | appInfos/{id}/primaryCategory |
-| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryOne |
-| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryTwo |
-| Tunes    | ✅    | GET    | appInfos/{id}/secondaryCategory |
+| Module   | Added | Type   | Endpoint                              |
+| -------- | :---: | ------ | ------------------------------------- |
+| Tunes    | ✅    | GET    | appInfos/{id}                         |
+| Tunes    | ✅    | PATCH  | appInfos/{id}                         |
+| Tunes    | ✅    | GET    | appInfos/{id}/appInfoLocalizations    |
+| Tunes    | ✅    | GET    | appInfos/{id}/primaryCategory         |
+| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryOne   |
+| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryTwo   |
+| Tunes    | ✅    | GET    | appInfos/{id}/secondaryCategory       |
 | Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryOne |
 | Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryTwo |
 </details>
@@ -277,27 +277,27 @@
 
 <details><summary>Apps</summary>
 
-| Module   | Added | Type   | Endpoint                                |
-| -------- | :---: | ------ | --------------------------------------- |
-| Tunes    | ✅    | GET    | /v1/apps                                |
-| Tunes    | ✅    | GET    | /v1/apps/{id}                           |
-| Tunes    | ✅    | PATCH  | /v1/apps/{id}                           |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/appInfos                  |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/appStoreVersions          |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/availableTerritories      |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/betaAppLocalizations      |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/betaAppReviewDetail       |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/betaGroups                |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/betaLicenseAgreement      |
-| Tunes    | ✅    | DELETE | /v1/apps/{id}/relationships/betaTesters |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/builds                    |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/endUserLicenseAgreement   |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/gameCenterEnabledVersions |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/inAppPurchases            |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/perfPowerMetrics          |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/preOrder                  |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/preReleaseVersions        |
-| Tunes    | ✅    | GET    | /v1/apps/{id}/prices                    |
+| Module   | Added | Type   | Endpoint                            |
+| -------- | :---: | ------ | ----------------------------------- |
+| Tunes    | ✅    | GET    | apps                                |
+| Tunes    | ✅    | GET    | apps/{id}                           |
+| Tunes    | ✅    | PATCH  | apps/{id}                           |
+| Tunes    | ✅    | GET    | apps/{id}/appInfos                  |
+| Tunes    | ✅    | GET    | apps/{id}/appStoreVersions          |
+| Tunes    | ✅    | GET    | apps/{id}/availableTerritories      |
+| Tunes    | ✅    | GET    | apps/{id}/betaAppLocalizations      |
+| Tunes    | ✅    | GET    | apps/{id}/betaAppReviewDetail       |
+| Tunes    | ✅    | GET    | apps/{id}/betaGroups                |
+| Tunes    | ✅    | GET    | apps/{id}/betaLicenseAgreement      |
+| Tunes    | ✅    | DELETE | apps/{id}/relationships/betaTesters |
+| Tunes    | ✅    | GET    | apps/{id}/builds                    |
+| Tunes    | ✅    | GET    | apps/{id}/endUserLicenseAgreement   |
+| Tunes    | ✅    | GET    | apps/{id}/gameCenterEnabledVersions |
+| Tunes    | ✅    | GET    | apps/{id}/inAppPurchases            |
+| Tunes    | ✅    | GET    | apps/{id}/perfPowerMetrics          |
+| Tunes    | ✅    | GET    | apps/{id}/preOrder                  |
+| Tunes    | ✅    | GET    | apps/{id}/preReleaseVersions        |
+| Tunes    | ✅    | GET    | apps/{id}/prices                    |
 </details>
 
 <details><summary>BetaAppLocalizations</summary>
@@ -314,12 +314,12 @@
 
 <details><summary>BetaAppReviewDetails</summary>
 
-| Module     | Added | Type   | Endpoint                          |
-| ---------- | :---: | ------ | --------------------------------- |
-| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails          |
-| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails/{id}     |
-| TestFlight | ✅    | PATCH  | /v1/betaAppReviewDetails/{id}     |
-| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails/{id}/app |
+| Module     | Added | Type   | Endpoint                      |
+| ---------- | :---: | ------ | ----------------------------- |
+| TestFlight | ✅    | GET    | betaAppReviewDetails          |
+| TestFlight | ✅    | GET    | betaAppReviewDetails/{id}     |
+| TestFlight | ✅    | PATCH  | betaAppReviewDetails/{id}     |
+| TestFlight | ✅    | GET    | betaAppReviewDetails/{id}/app |
 </details>
 
 <details><summary>BetaAppReviewSubmissions</summary>
@@ -346,22 +346,22 @@
 
 <details><summary>BetaGroups</summary>
 
-| Module     | Added | Type   | Endpoint                                      |
-| ---------- | :---: | ------ | --------------------------------------------- |
-| TestFlight | ✅    | GET    | /v1/betaGroups                                |
-| TestFlight | ✅    | POST   | /v1/betaGroups                                |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}                           |
-| TestFlight | ✅    | PATCH  | /v1/betaGroups/{id}                           |
-| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}                           |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/app                       |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/relationships/betaTesters |
-| TestFlight | ✅    | POST   | /v1/betaGroups/{id}/relationships/betaTesters |
-| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}/relationships/betaTesters |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/betaTesters               |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/relationships/builds      |
-| TestFlight | ✅    | POST   | /v1/betaGroups/{id}/relationships/builds      |
-| TestFlight | ✅    | DELETE | /v1/betaGroups/{id}/relationships/builds      |
-| TestFlight | ✅    | GET    | /v1/betaGroups/{id}/builds                    |
+| Module     | Added | Type   | Endpoint                                  |
+| ---------- | :---: | ------ | ----------------------------------------- |
+| TestFlight | ✅    | GET    | betaGroups                                |
+| TestFlight | ✅    | POST   | betaGroups                                |
+| TestFlight | ✅    | GET    | betaGroups/{id}                           |
+| TestFlight | ✅    | PATCH  | betaGroups/{id}                           |
+| TestFlight | ✅    | DELETE | betaGroups/{id}                           |
+| TestFlight | ✅    | GET    | betaGroups/{id}/app                       |
+| TestFlight | ✅    | GET    | betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | POST   | betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | DELETE | betaGroups/{id}/relationships/betaTesters |
+| TestFlight | ✅    | GET    | betaGroups/{id}/betaTesters               |
+| TestFlight | ✅    | GET    | betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | POST   | betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | DELETE | betaGroups/{id}/relationships/builds      |
+| TestFlight | ✅    | GET    | betaGroups/{id}/builds                    |
 </details>
 
 <details><summary>BetaLicenseAgreements</summary>
@@ -376,9 +376,9 @@
 
 <details><summary>BetaTesterInvitations</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | POST   | /v1/betaTesterInvitations |
+| Module     | Added | Type   | Endpoint              |
+| ---------- | :---: | ------ | --------------------- |
+| TestFlight | ✅    | POST   | betaTesterInvitations |
 </details>
 
 <details><summary>BetaTesters</summary>
@@ -448,44 +448,63 @@
 
 <details><summary>BundleIdCapabilities</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                  |
+| -------- | :---: | ------ | ------------------------- |
+| Tunes    | ✅    | POST   | bundleIdCapabilities      |
+| Tunes    | ✅    | PATCH  | bundleIdCapabilities/{id} |
+| Tunes    | ✅    | DELETE | bundleIdCapabilities/{id} |
 </details>
 
 <details><summary>BundleIds</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                            |
+| -------- | :---: | ------ | ----------------------------------- |
+| Tunes    | ✅    | GET    | bundleIds                           |
+| Tunes    | ✅    | POST   | bundleIds                           |
+| Tunes    | ✅    | GET    | bundleIds/{id}                      |
+| Tunes    | ✅    | PATCH  | bundleIds/{id}                      |
+| Tunes    | ✅    | DELETE | bundleIds/{id}                      |
+| Tunes    | ✅    | GET    | bundleIds/{id}/app                  |
+| Tunes    | ✅    | GET    | bundleIds/{id}/bundleIdCapabilities |
+| Tunes    | ✅    | GET    | bundleIds/{id}/profiles             |
 </details>
 
 <details><summary>Certificates</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module       | Added | Type   | Endpoint          |
+| ------------ | :---: | ------ | ----------------- |
+| Provisioning | ✅    | GET    | certificates      |
+| Provisioning | ✅    | POST   | certificates      |
+| Provisioning | ✅    | GET    | certificates/{id} |
+| Provisioning | ✅    | DELETE | certificates/{id} |
 </details>
 
 <details><summary>Devices</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint     |
+| -------- | :---: | ------ | ------------ |
+| Tunes    | ✅    | GET    | devices      |
+| Tunes    | ✅    | POST   | devices      |
+| Tunes    | ✅    | GET    | devices/{id} |
+| Tunes    | ✅    | PATCH  | devices/{id} |
 </details>
 
 <details><summary>EndUserLicenseAgreements</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                  |
+| -------- | :---: | ------ | ----------------------------------------- |
+| Tunes    | ✅    | POST   | endUserLicenseAgreements                  |
+| Tunes    | ✅    | GET    | endUserLicenseAgreements/{id}             |
+| Tunes    | ✅    | PATCH  | endUserLicenseAgreements/{id}             |
+| Tunes    | ✅    | DELETE | endUserLicenseAgreements/{id}             |
+| Tunes    | ✅    | GET    | endUserLicenseAgreements/{id}/territories |
 </details>
 
 <details><summary>FinanceReports</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint       |
+| -------- | :---: | ------ | -------------- |
+| Tunes    | ✅    | GET    | financeReports |
 </details>
 
 <details><summary>IdfaDeclarations</summary>
