@@ -414,16 +414,36 @@
 
 <details><summary>BuildBetaNotifications</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint               |
+| ---------- | :---: | ------ | ---------------------- |
+| TestFlight | ✅    | POST   | buildBetaNotifications |
 </details>
 
 <details><summary>Builds</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                           |
+| -------- | :---: | ------ | -------------------------------------------------- |
+| Tunes    | ✅    | GET    | builds                                             |
+| Tunes    | ✅    | GET    | builds/{id}                                        |
+| Tunes    | ✅    | PATCH  | builds/{id}                                        |
+| Tunes    | ✅    | GET    | builds/{id}/app                                    |
+| Tunes    | ✅    | GET    | builds/{id}/relationships/appEncryptionDeclaration |
+| Tunes    | ✅    | PATCH  | builds/{id}/relationships/appEncryptionDeclaration |
+| Tunes    | ✅    | GET    | builds/{id}/appEncryptionDeclaration               |
+| Tunes    | ✅    | GET    | builds/{id}/appStoreVersion                        |
+| Tunes    | ✅    | GET    | builds/{id}/betaAppReviewSubmission                |
+| Tunes    | ✅    | GET    | builds/{id}/betaBuildLocalizations                 |
+| Tunes    | ✅    | POST   | builds/{id}/relationships/betaGroups               |
+| Tunes    | ✅    | DELETE | builds/{id}/relationships/betaGroups               |
+| Tunes    | ✅    | GET    | builds/{id}/buildBetaDetail                        |
+| Tunes    | ✅    | GET    | builds/{id}/diagnosticSignatures                   |
+| Tunes    | ✅    | GET    | builds/{id}/icons                                  |
+| Tunes    | ✅    | GET    | builds/{id}/relationships/individualTesters        |
+| Tunes    | ✅    | POST   | builds/{id}/relationships/individualTesters        |
+| Tunes    | ✅    | DELETE | builds/{id}/relationships/individualTesters        |
+| Tunes    | ✅    | GET    | builds/{id}/individualTesters                      |
+| Tunes    | ✅    | GET    | builds/{id}/perfPowerMetrics                       |
+| Tunes    | ✅    | GET    | builds/{id}/preReleaseVersion                      |
 </details>
 
 <details><summary>BundleIdCapabilities</summary>
