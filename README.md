@@ -509,78 +509,108 @@
 
 <details><summary>IdfaDeclarations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint              |
+| -------- | :---: | ------ | --------------------- |
+| Tunes    | ✅    | POST   | idfaDeclarations.     |
+| Tunes    | ✅    | PATCH  | idfaDeclarations/{id} |
+| Tunes    | ✅    | DELETE | idfaDeclarations/{id} |
 </details>
 
 <details><summary>InAppPurchases</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint            |
+| -------- | :---: | ------ | ------------------- |
+| Tunes    | ✅    | GET    | inAppPurchases/{id} |
 </details>
 
 <details><summary>PreReleaseVersions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                       |
+| -------- | :---: | ------ | ------------------------------ |
+| Tunes    | ✅    | GET    | preReleaseVersions             |
+| Tunes    | ✅    | GET    | preReleaseVersions/{id}        |
+| Tunes    | ✅    | GET    | preReleaseVersions/{id}/app    |
+| Tunes    | ✅    | GET    | preReleaseVersions/{id}/builds |
 </details>
 
 <details><summary>Profiles</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module       | Added | Type   | Endpoint                   |
+| ------------ | :---: | ------ | -------------------------- |
+| Provisioning | ✅    | GET    | profiles                   |
+| Provisioning | ✅    | POST   | profiles                   |
+| Provisioning | ✅    | GET    | profiles/{id}              |
+| Provisioning | ✅    | DELETE | profiles/{id}              |
+| Provisioning | ✅    | GET    | profiles/{id}/bundleId     |
+| Provisioning | ✅    | GET    | profiles/{id}/certificates |
+| Provisioning | ✅    | GET    | profiles/{id}/devices      |
 </details>
 
 <details><summary>RoutingAppCoverages</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                 |
+| -------- | :---: | ------ | ------------------------ |
+| Tunes    | ✅    | POST   | routingAppCoverages      |
+| Tunes    | ✅    | GET    | routingAppCoverages/{id} |
+| Tunes    | ✅    | PATCH  | routingAppCoverages/{id} |
+| Tunes    | ✅    | DELETE | routingAppCoverages/{id} |
 </details>
 
 <details><summary>SalesReports</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Tunes    | ✅    | GET    | salesReports |
 </details>
 
 <details><summary>Territories</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Tunes    | ✅    | GET    | territories |
 </details>
 
 <details><summary>UserInvitations</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Users    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                         |
+| -------- | :---: | ------ | -------------------------------- |
+| Users    | ✅    | GET    | userInvitations                  |
+| Users    | ✅    | POST   | userInvitations                  |
+| Users    | ✅    | GET    | userInvitations/{id}             |
+| Users    | ✅    | DELETE | userInvitations/{id}             |
+| Users    | ✅    | GET    | userInvitations/{id}/visibleApps |
 </details>
 
 <details><summary>Users</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Users    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                             |
+| -------- | :---: | ------ | ------------------------------------ |
+| Users    | ✅    | GET    | users                                |
+| Users    | ✅    | GET    | users/{id}                           |
+| Users    | ✅    | PATCH  | users/{id}                           |
+| Users    | ✅    | DELETE | users/{id}                           |
+| Users    | ✅    | GET    | users/{id}/relationships/visibleApps |
+| Users    | ✅    | POST   | users/{id}/relationships/visibleApps |
+| Users    | ✅    | PATCH  | users/{id}/relationships/visibleApps |
+| Users    | ✅    | DELETE | users/{id}/relationships/visibleApps |
+| Users    | ✅    | GET    | users/{id}/visibleApps               |
 </details>
 
 <details><summary>DiagnosticSignatures</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                       |
+| -------- | :---: | ------ | ------------------------------ |
+| Tunes    | ✅    | GET    | diagnosticSignatures/{id}/logs |
 </details>
 
 <details><summary>GameCenterEnabledVersions</summary>
 
-| Module   | Added | Type   | Endpoint |
-| -------- | :---: | ------ | -------- |
-| Tunes    | ✅    | GET    |  |
+| Module   | Added | Type   | Endpoint                                                        |
+| -------- | :---: | ------ | --------------------------------------------------------------- |
+| Tunes    | ✅    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| Tunes    | ✅    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| Tunes    | ✅    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| Tunes    | ✅    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| Tunes    | ✅    | GET    | gameCenterEnabledVersions/{id}/compatibleVersions               |
 </details>
 
