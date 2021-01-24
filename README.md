@@ -314,23 +314,34 @@
 
 <details><summary>BetaAppReviewDetails</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                          |
+| ---------- | :---: | ------ | --------------------------------- |
+| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails          |
+| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails/{id}     |
+| TestFlight | ✅    | PATCH  | /v1/betaAppReviewDetails/{id}     |
+| TestFlight | ✅    | GET    | /v1/betaAppReviewDetails/{id}/app |
 </details>
 
 <details><summary>BetaAppReviewSubmissions</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                            |
+| ---------- | :---: | ------ | ----------------------------------- |
+| TestFlight | ✅    | GET    | betaAppReviewSubmissions            |
+| TestFlight | ✅    | POST   | betaAppReviewSubmissions            |
+| TestFlight | ✅    | GET    | betaAppReviewSubmissions/{id}       |
+| TestFlight | ✅    | GET    | betaAppReviewSubmissions/{id}/build |
 </details>
 
 <details><summary>BetaBuildLocalizations</summary>
 
-| Module     | Added | Type   | Endpoint |
-| ---------- | :---: | ------ | -------- |
-| TestFlight | ✅    | GET    |          |
+| Module     | Added | Type   | Endpoint                          |
+| ---------- | :---: | ------ | --------------------------------- |
+| TestFlight | ✅    | GET    | betaBuildLocalizations            |
+| TestFlight | ✅    | POST   | betaBuildLocalizations            |
+| TestFlight | ✅    | GET    | betaBuildLocalizations/{id}       |
+| TestFlight | ✅    | PATCH  | betaBuildLocalizations/{id}       |
+| TestFlight | ✅    | DELETE | betaBuildLocalizations/{id}       |
+| TestFlight | ✅    | GET    | betaBuildLocalizations/{id}/build |
 </details>
 
 <details><summary>BetaGroups</summary>
