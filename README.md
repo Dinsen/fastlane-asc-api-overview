@@ -4,10 +4,6 @@
 | Module | Implemented | Type | Endpoint |
 | ------ | ------ | ------ | ------ |
 | Tunes |   | GET | apps/#{app_id}/dataUsages |
-| Tunes | X | GET | appScreenshots/#{app_screenshot_id} |
-| Tunes | X | POST | appScreenshots |
-| Tunes | X | PATCH | appScreenshots/#{app_screenshot_id} |
-| Tunes | X | DELETE | appScreenshots/#{app_screenshot_id} |
 | Tunes | X | GET | apps/#{app_id}/appInfos |
 | Tunes | X | PATCH | appInfos/#{app_info_id} |
 | Tunes | X | PATCH | appInfos/#{app_info_id} |
@@ -172,7 +168,7 @@
 | Tunes    | ❌    | GET    | appScreenshotSets/{id}/appScreenshots               |
 </details>
 
-<details><summary>AppScreenshots</summary>
+<details><summary>AppScreenshots ✅</summary>
 
 | Module   | Added | Type   | Endpoint            |
 | -------- | :---: | ------ | ------------------- |
@@ -422,27 +418,27 @@
 | Tunes    | ✅    | GET    | builds/{id}/preReleaseVersion                      |
 </details>
 
-<details><summary>BundleIdCapabilities</summary>
+<details><summary>BundleIdCapabilities ❌</summary>
 
-| Module   | Added | Type   | Endpoint                  |
-| -------- | :---: | ------ | ------------------------- |
-| Tunes    | ✅    | POST   | bundleIdCapabilities      |
-| Tunes    | ✅    | PATCH  | bundleIdCapabilities/{id} |
-| Tunes    | ✅    | DELETE | bundleIdCapabilities/{id} |
+| Module       | Added | Type   | Endpoint                  |
+| ------------ | :---: | ------ | ------------------------- |
+| Provisioning | ❌    | POST   | bundleIdCapabilities      |
+| Provisioning | ❌    | PATCH  | bundleIdCapabilities/{id} |
+| Provisioning | ❌    | DELETE | bundleIdCapabilities/{id} |
 </details>
 
 <details><summary>BundleIds</summary>
 
-| Module   | Added | Type   | Endpoint                            |
-| -------- | :---: | ------ | ----------------------------------- |
-| Tunes    | ✅    | GET    | bundleIds                           |
-| Tunes    | ✅    | POST   | bundleIds                           |
-| Tunes    | ✅    | GET    | bundleIds/{id}                      |
-| Tunes    | ✅    | PATCH  | bundleIds/{id}                      |
-| Tunes    | ✅    | DELETE | bundleIds/{id}                      |
-| Tunes    | ✅    | GET    | bundleIds/{id}/app                  |
-| Tunes    | ✅    | GET    | bundleIds/{id}/bundleIdCapabilities |
-| Tunes    | ✅    | GET    | bundleIds/{id}/profiles             |
+| Module       | Added | Type   | Endpoint                            |
+| ------------ | :---: | ------ | ----------------------------------- |
+| Provisioning | ✅    | GET    | bundleIds                           |
+| Provisioning | ❌    | POST   | bundleIds                           |
+| Provisioning | ✅    | GET    | bundleIds/{id}                      |
+| Provisioning | ❌    | PATCH  | bundleIds/{id}                      |
+| Provisioning | ❌    | DELETE | bundleIds/{id}                      |
+| Provisioning | ✅    | GET    | bundleIds/{id}/app                  |
+| Provisioning | ✅    | GET    | bundleIds/{id}/bundleIdCapabilities |
+| Provisioning | ✅    | GET    | bundleIds/{id}/profiles             |
 </details>
 
 <details><summary>Certificates</summary>
