@@ -5,8 +5,6 @@
 | ------ | ------ | ------ | ------ |
 | Tunes |   | GET | apps/#{app_id}/dataUsages |
 | Tunes | X | GET | apps/#{app_id}/appInfos |
-| Tunes | X | PATCH | appInfos/#{app_info_id} |
-| Tunes | X | PATCH | appInfos/#{app_info_id} |
 | Tunes | X | DELETE | appInfos/#{app_info_id} |
 | Tunes | X | GET | appInfos/#{app_info_id}/appInfoLocalizations |
 | Tunes | X | POST | appInfoLocalizations |
@@ -81,7 +79,7 @@
 | Tunes    | ✅    | POST   | appInfoLocalizations      |
 | Tunes    | ✅    | GET    | appInfoLocalizations/{id} |
 | Tunes    | ✅    | PATCH  | appInfoLocalizations/{id} |
-| Tunes    | ✅    | DELETE | appInfoLocalizations/{id} |
+| Tunes    | ❌    | DELETE | appInfoLocalizations/{id} |
 </details>
 
 <details><summary>AppInfos</summary>
@@ -90,13 +88,13 @@
 | -------- | :---: | ------ | ------------------------------------- |
 | Tunes    | ✅    | GET    | appInfos/{id}                         |
 | Tunes    | ✅    | PATCH  | appInfos/{id}                         |
-| Tunes    | ✅    | GET    | appInfos/{id}/appInfoLocalizations    |
-| Tunes    | ✅    | GET    | appInfos/{id}/primaryCategory         |
-| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryOne   |
-| Tunes    | ✅    | GET    | appInfos/{id}/primarySubcategoryTwo   |
-| Tunes    | ✅    | GET    | appInfos/{id}/secondaryCategory       |
-| Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryOne |
-| Tunes    | ✅    | GET    | appInfos/{id}/secondarySubcategoryTwo |
+| Tunes    | ❌    | GET    | appInfos/{id}/appInfoLocalizations    |
+| Tunes    | ❌    | GET    | appInfos/{id}/primaryCategory         |
+| Tunes    | ❌    | GET    | appInfos/{id}/primarySubcategoryOne   |
+| Tunes    | ❌    | GET    | appInfos/{id}/primarySubcategoryTwo   |
+| Tunes    | ❌    | GET    | appInfos/{id}/secondaryCategory       |
+| Tunes    | ❌    | GET    | appInfos/{id}/secondarySubcategoryOne |
+| Tunes    | ❌    | GET    | appInfos/{id}/secondarySubcategoryTwo |
 </details>
 
 <details><summary>AppPreOrders</summary>
