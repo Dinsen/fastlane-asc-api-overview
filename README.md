@@ -4,45 +4,20 @@
 | Module | Implemented | Type | Endpoint |
 | ------ | ------ | ------ | ------ |
 | Tunes |   | GET | apps/#{app_id}/dataUsages |
-| Tunes | X | GET | apps/#{app_id}/appInfos |
 | Tunes | X | DELETE | appInfos/#{app_info_id} |
-| Tunes | X | GET | appInfos/#{app_info_id}/appInfoLocalizations |
-| Tunes | X | POST | appInfoLocalizations |
-| Tunes | X | PATCH | appInfoLocalizations/#{app_info_localization_id} |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/appStoreReviewDetail |
-| Tunes | X | POST | appStoreReviewDetails |
-| Tunes | X | PATCH | appStoreReviewDetails/#{app_store_review_detail_id} |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/appStoreVersionLocalizations |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/appStoreVersionPhasedRelease |
-| Tunes | X | POST | appStoreVersionPhasedReleases |
-| Tunes | X | PATCH | appStoreVersionPhasedReleases/#{app_store_version_phased_release_id} |
-| Tunes | X | DELETE | appStoreVersionPhasedReleases/#{app_store_version_phased_release_id} |
-| Tunes | X | GET | apps/#{app_id}/appStoreVersions |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id} |
-| Tunes | X | POST | appStoreVersions |
-| Tunes | X | PATCH | appStoreVersions/#{app_store_version_id} |
-| Tunes | X | PATCH | appStoreVersions/#{app_store_version_id} |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/resetRatingsRequest |
-| Tunes | X | POST | resetRatingsRequests |
-| Tunes | X | DELETE | resetRatingsRequests/#{reset_ratings_request_id} |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/appStoreVersionSubmission |
-| Tunes | X | POST | appStoreVersionSubmissions |
-| Tunes | X | DELETE | appStoreVersionSubmissions/#{app_store_version_submission_id} |
-| Tunes | X | POST | appStoreVersionReleaseRequests |
-| Tunes | X | GET | apps/#{app_id}/customAppUsers |
-| Tunes | X | POST | customAppUsers |
-| Tunes | X | DELETE | customAppUsers/#{custom_app_user_id} |
-| Tunes | X | GET | apps/#{app_id}/customAppOrganizations |
-| Tunes | X | POST | customAppOrganizations |
-| Tunes | X | DELETE | customAppOrganizations/#{custom_app_organization_id} |
-| Tunes | X | GET | appStoreVersions/#{app_store_version_id}/idfaDeclaration |
-| Tunes | X | POST | idfaDeclarations |
-| Tunes | X | PATCH | idfaDeclarations/#{idfa_declaration_id} |
-| Tunes | X | DELETE | idfaDeclarations/#{idfa_declaration_id} |
-| Tunes | X | GET | sandboxTesters |
-| Tunes | X | POST | sandboxTesters |
-| Tunes | X | DELETE | sandboxTesters/#{sandbox_tester_id} |
-| Tunes | X | GET | territories |
+| Tunes | ? | GET | appStoreVersions/#{app_store_version_id}/resetRatingsRequest |
+| Tunes | ? | POST | resetRatingsRequests |
+| Tunes | ? | DELETE | resetRatingsRequests/#{reset_ratings_request_id} |
+| Tunes | ? | POST | appStoreVersionReleaseRequests |
+| Tunes | ? | GET | apps/#{app_id}/customAppUsers |
+| Tunes | ? | POST | customAppUsers |
+| Tunes | ? | DELETE | customAppUsers/#{custom_app_user_id} |
+| Tunes | ? | GET | apps/#{app_id}/customAppOrganizations |
+| Tunes | ? | POST | customAppOrganizations |
+| Tunes | ? | DELETE | customAppOrganizations/#{custom_app_organization_id} |
+| Tunes | ? | GET | sandboxTesters |
+| Tunes | ? | POST | sandboxTesters |
+| Tunes | ? | DELETE | sandboxTesters/#{sandbox_tester_id} |
 
 
 <details><summary>AgeRatingDeclarations</summary>
@@ -77,7 +52,7 @@
 | Module   | Added | Type   | Endpoint                  |
 | -------- | :---: | ------ | ------------------------- |
 | Tunes    | ✅    | POST   | appInfoLocalizations      |
-| Tunes    | ✅    | GET    | appInfoLocalizations/{id} |
+| Tunes    | ❌    | GET    | appInfoLocalizations/{id} |
 | Tunes    | ✅    | PATCH  | appInfoLocalizations/{id} |
 | Tunes    | ❌    | DELETE | appInfoLocalizations/{id} |
 </details>
@@ -88,7 +63,7 @@
 | -------- | :---: | ------ | ------------------------------------- |
 | Tunes    | ✅    | GET    | appInfos/{id}                         |
 | Tunes    | ✅    | PATCH  | appInfos/{id}                         |
-| Tunes    | ❌    | GET    | appInfos/{id}/appInfoLocalizations    |
+| Tunes    | ✅    | GET    | appInfos/{id}/appInfoLocalizations    |
 | Tunes    | ❌    | GET    | appInfos/{id}/primaryCategory         |
 | Tunes    | ❌    | GET    | appInfos/{id}/primarySubcategoryOne   |
 | Tunes    | ❌    | GET    | appInfos/{id}/primarySubcategoryTwo   |
@@ -191,9 +166,9 @@
 | Module   | Added | Type   | Endpoint                                             |
 | -------- | :---: | ------ | ---------------------------------------------------- |
 | Tunes    | ✅    | POST   | appStoreReviewDetails                                |
-| Tunes    | ✅    | GET    | appStoreReviewDetails/{id}                           |
+| Tunes    | ❌    | GET    | appStoreReviewDetails/{id}                           |
 | Tunes    | ✅    | PATCH  | appStoreReviewDetails/{id}                           |
-| Tunes    | ✅    | GET    | appStoreReviewDetails/{id}/appStoreReviewAttachments |
+| Tunes    | ❌    | GET    | appStoreReviewDetails/{id}/appStoreReviewAttachments |
 </details>
 
 <details><summary>AppStoreVersionLocalizations</summary>
@@ -208,7 +183,7 @@
 | Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}/appScreenshotSets |
 </details>
 
-<details><summary>AppStoreVersionPhasedReleases</summary>
+<details><summary>AppStoreVersionPhasedReleases ✅</summary>
 
 | Module   | Added | Type   | Endpoint                           |
 | -------- | :---: | ------ | ---------------------------------- |
@@ -217,7 +192,7 @@
 | Tunes    | ✅    | DELETE | appStoreVersionPhasedReleases/{id} |
 </details>
 <details>
-<summary>AppStoreVersionSubmissions</summary>
+<summary>AppStoreVersionSubmissions ✅</summary>
 
 | Module   | Added | Type   | Endpoint                        |
 | -------- | :---: | ------ | ------------------------------- |
@@ -232,7 +207,7 @@
 | Tunes    | ✅    | POST   | appStoreVersions                                   |
 | Tunes    | ✅    | GET    | appStoreVersions/{id}                              |
 | Tunes    | ✅    | PATCH  | appStoreVersions/{id}                              |
-| Tunes    | ✅    | DELETE | appStoreVersions/{id}                              |
+| Tunes    | ❌    | DELETE | appStoreVersions/{id}                              |
 | Tunes    | ✅    | GET    | appStoreVersions/{id}/ageRatingDeclaration         |
 | Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreReviewDetail         |
 | Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionLocalizations |
@@ -477,7 +452,7 @@
 | Tunes    | ✅    | GET    | financeReports |
 </details>
 
-<details><summary>IdfaDeclarations</summary>
+<details><summary>IdfaDeclarations ✅</summary>
 
 | Module   | Added | Type   | Endpoint              |
 | -------- | :---: | ------ | --------------------- |
@@ -533,7 +508,7 @@
 | Tunes    | ✅    | GET    | salesReports |
 </details>
 
-<details><summary>Territories</summary>
+<details><summary>Territories ✅</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
