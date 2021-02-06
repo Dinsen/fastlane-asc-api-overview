@@ -54,7 +54,7 @@ Not part of the official documentation
 | Tunes    | ❌    | POST   | appEncryptionDeclarations/{id}/relationships/builds |
 </details>
 
-<details><summary>AppInfoLocalizations ❌</summary>
+<details><summary>AppInfoLocalizations</summary>
 
 | Module   | Added | Type   | Endpoint                  |
 | -------- | :---: | ------ | ------------------------- |
@@ -64,7 +64,7 @@ Not part of the official documentation
 | Tunes    | ❌    | DELETE | appInfoLocalizations/{id} |
 </details>
 
-<details><summary>AppInfos ❌</summary>
+<details><summary>AppInfos</summary>
 
 | Module   | Added | Type   | Endpoint                              |
 | -------- | :---: | ------ | ------------------------------------- |
@@ -89,7 +89,7 @@ Not part of the official documentation
 | Tunes    | ❌    | DELETE | appPreOrders/{id} |
 </details>
 
-<details><summary>AppPreviewSets ❌</summary>
+<details><summary>AppPreviewSets</summary>
 
 | Module   | Added | Type   | Endpoint                                      |
 | -------- | :---: | ------ | --------------------------------------------- |
@@ -111,7 +111,7 @@ Not part of the official documentation
 | Tunes    | ✅    | DELETE | appPreviews/{id} |
 </details>
 
-<details><summary>AppPricePoints ❌</summary>
+<details><summary>AppPricePoints</summary>
 
 | Module   | Added | Type   | Endpoint                      |
 | -------- | :---: | ------ | ----------------------------- |
@@ -136,7 +136,7 @@ Not part of the official documentation
 | Tunes    | ✅    | GET    | /v1/appPrices/{id} |
 </details>
 
-<details><summary>AppScreenshotSets ❌</summary>
+<details><summary>AppScreenshotSets</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -158,7 +158,7 @@ Not part of the official documentation
 | Tunes    | ✅    | DELETE | appScreenshots/{id} |
 </details>
 
-<details><summary>AppStoreReviewAttachments ❌</summary>
+<details><summary>AppStoreReviewAttachments</summary>
 
 | Module   | Added | Type   | Endpoint                       |
 | -------- | :---: | ------ | ------------------------------ |
@@ -168,7 +168,7 @@ Not part of the official documentation
 | Tunes    | ✅    | DELETE | appStoreReviewAttachments/{id} |
 </details>
 
-<details><summary>AppStoreReviewDetails ❌</summary>
+<details><summary>AppStoreReviewDetails</summary>
 
 | Module   | Added | Type   | Endpoint                                             |
 | -------- | :---: | ------ | ---------------------------------------------------- |
@@ -178,7 +178,7 @@ Not part of the official documentation
 | Tunes    | ❌    | GET    | appStoreReviewDetails/{id}/appStoreReviewAttachments |
 </details>
 
-<details><summary>AppStoreVersionLocalizations ❌</summary>
+<details><summary>AppStoreVersionLocalizations</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -207,7 +207,7 @@ Not part of the official documentation
 | Tunes    | ✅    | DELETE | appStoreVersionSubmissions/{id} |
 </details>
 
-<details><summary>AppStoreVersions ❌</summary>
+<details><summary>AppStoreVersions</summary>
 
 | Module     | Added | Type   | Endpoint                                           |
 | ---------- | :---: | ------ | -------------------------------------------------- |
@@ -237,22 +237,22 @@ Not part of the official documentation
 | Tunes      | ✅    | GET    | apps/{id}/appInfos                  |
 | Tunes      | ✅    | GET    | apps/{id}/appStoreVersions          |
 | Tunes      | ✅    | GET    | apps/{id}/availableTerritories      |
-| Tunes    | ❌    | GET    | apps/{id}/betaAppLocalizations      |
-| Tunes    | ❌    | GET    | apps/{id}/betaAppReviewDetail       |
-| Tunes    | ❌    | GET    | apps/{id}/betaGroups                |
-| Tunes    | ❌    | GET    | apps/{id}/betaLicenseAgreement      |
+| Tunes      | ❌    | GET    | apps/{id}/betaAppLocalizations      |
+| Tunes      | ❌    | GET    | apps/{id}/betaAppReviewDetail       |
+| Tunes      | ❌    | GET    | apps/{id}/betaGroups                |
+| Tunes      | ❌    | GET    | apps/{id}/betaLicenseAgreement      |
 | TestFlight | ✅    | DELETE | apps/{id}/relationships/betaTesters |
-| Tunes    | ❌    | GET    | apps/{id}/builds                    |
-| Tunes    | ❌    | GET    | apps/{id}/endUserLicenseAgreement   |
-| Tunes    | ❌    | GET    | apps/{id}/gameCenterEnabledVersions |
-| Tunes    | ❌    | GET    | apps/{id}/inAppPurchases            |
-| Tunes    | ❌    | GET    | apps/{id}/perfPowerMetrics          |
-| Tunes    | ❌    | GET    | apps/{id}/preOrder                  |
-| Tunes    | ❌    | GET    | apps/{id}/preReleaseVersions        |
-| Tunes    | ❌    | GET    | apps/{id}/prices                    |
+| Tunes      | ❌    | GET    | apps/{id}/builds                    |
+| Tunes      | ❌    | GET    | apps/{id}/endUserLicenseAgreement   |
+| Tunes      | ❌    | GET    | apps/{id}/gameCenterEnabledVersions |
+| Tunes      | ❌    | GET    | apps/{id}/inAppPurchases            |
+| Tunes      | ❌    | GET    | apps/{id}/perfPowerMetrics          |
+| Tunes      | ❌    | GET    | apps/{id}/preOrder                  |
+| Tunes      | ❌    | GET    | apps/{id}/preReleaseVersions        |
+| Tunes      | ❌    | GET    | apps/{id}/prices                    |
 </details>
 
-<details><summary>BetaAppLocalizations ❌</summary>
+<details><summary>BetaAppLocalizations</summary>
 
 | Module     | Added | Type   | Endpoint                      |
 | ---------- | :---: | ------ | ----------------------------- |
@@ -264,7 +264,7 @@ Not part of the official documentation
 | TestFlight | ❌    | GET    | betaAppLocalizations/{id}/app |
 </details>
 
-<details><summary>BetaAppReviewDetails ❌</summary>
+<details><summary>BetaAppReviewDetails</summary>
 
 | Module     | Added | Type   | Endpoint                      |
 | ---------- | :---: | ------ | ----------------------------- |
@@ -274,7 +274,7 @@ Not part of the official documentation
 | TestFlight | ❌    | GET    | betaAppReviewDetails/{id}/app |
 </details>
 
-<details><summary>BetaAppReviewSubmissions ❌</summary>
+<details><summary>BetaAppReviewSubmissions</summary>
 
 | Module     | Added | Type   | Endpoint                            |
 | ---------- | :---: | ------ | ----------------------------------- |
@@ -284,7 +284,7 @@ Not part of the official documentation
 | TestFlight | ❌    | GET    | betaAppReviewSubmissions/{id}/build |
 </details>
 
-<details><summary>BetaBuildLocalizations ❌</summary>
+<details><summary>BetaBuildLocalizations</summary>
 
 | Module     | Added | Type   | Endpoint                          |
 | ---------- | :---: | ------ | --------------------------------- |
@@ -296,7 +296,7 @@ Not part of the official documentation
 | TestFlight | ❌    | GET    | betaBuildLocalizations/{id}/build |
 </details>
 
-<details><summary>BetaGroups ❌</summary>
+<details><summary>BetaGroups</summary>
 
 | Module     | Added | Type   | Endpoint                                  |
 | ---------- | :---: | ------ | ----------------------------------------- |
@@ -431,7 +431,7 @@ Not part of the official documentation
 | Provisioning | ✅    | DELETE | certificates/{id} |
 </details>
 
-<details><summary>Devices ❌</summary>
+<details><summary>Devices</summary>
 
 | Module       | Added | Type   | Endpoint     |
 | ------------ | :---: | ------ | ------------ |
@@ -485,7 +485,7 @@ Not part of the official documentation
 | TestFlight | ❌    | GET    | preReleaseVersions/{id}/builds |
 </details>
 
-<details><summary>Profiles ❌</summary>
+<details><summary>Profiles</summary>
 
 | Module       | Added | Type   | Endpoint                   |
 | ------------ | :---: | ------ | -------------------------- |
