@@ -1,10 +1,11 @@
 
 ### App Store Connect API v1.2 implementation overview
 
+Not part of the official documentation
 | Module | Implemented | Type | Endpoint |
 | ------ | ------ | ------ | ------ |
-| Tunes |   | GET | apps/#{app_id}/dataUsages |
-| Tunes | X | DELETE | appInfos/#{app_info_id} |
+| Tunes | ? | GET | apps/#{app_id}/dataUsages |
+| Tunes | ? | DELETE | appInfos/#{app_info_id} |
 | Tunes | ? | GET | appStoreVersions/#{app_store_version_id}/resetRatingsRequest |
 | Tunes | ? | POST | resetRatingsRequests |
 | Tunes | ? | DELETE | resetRatingsRequests/#{reset_ratings_request_id} |
@@ -18,6 +19,12 @@
 | Tunes | ? | GET | sandboxTesters |
 | Tunes | ? | POST | sandboxTesters |
 | Tunes | ? | DELETE | sandboxTesters/#{sandbox_tester_id} |
+| TestFlight | ? | GET | betaBuildMetrics |
+| TestFlight | ? | POST | bulkBetaTesterAssignments |
+| TestFlight | ? | GET | betaTesterMetrics |
+| TestFlight | ? | GET | buildDeliveries |
+| TestFlight | ? | GET | betaFeedbacks |
+| TestFlight | ? | DELETE | betaFeedbacks/#{feedback_id} |
 
 
 <details><summary>AgeRatingDeclarations ✅</summary>
@@ -202,22 +209,22 @@
 
 <details><summary>AppStoreVersions ❌</summary>
 
-| Module   | Added | Type   | Endpoint                                           |
-| -------- | :---: | ------ | -------------------------------------------------- |
-| Tunes    | ✅    | POST   | appStoreVersions                                   |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}                              |
-| Tunes    | ✅    | PATCH  | appStoreVersions/{id}                              |
-| Tunes    | ❌    | DELETE | appStoreVersions/{id}                              |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/ageRatingDeclaration         |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreReviewDetail         |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionLocalizations |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionPhasedRelease |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/appStoreVersionSubmission    |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/relationships/build          |
-| Tunes    | ✅    | PATCH  | appStoreVersions/{id}/relationships/build          |
+| Module     | Added | Type   | Endpoint                                           |
+| ---------- | :---: | ------ | -------------------------------------------------- |
+| Tunes      | ✅    | POST   | appStoreVersions                                   |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}                              |
+| Tunes      | ✅    | PATCH  | appStoreVersions/{id}                              |
+| Tunes      | ❌    | DELETE | appStoreVersions/{id}                              |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/ageRatingDeclaration         |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/appStoreReviewDetail         |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/appStoreVersionLocalizations |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/appStoreVersionPhasedRelease |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/appStoreVersionSubmission    |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/relationships/build          |
+| Tunes      | ✅    | PATCH  | appStoreVersions/{id}/relationships/build          |
 | TestFlight | ✅    | GET    | appStoreVersions/{id}/build                        |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/idfaDeclaration              |
-| Tunes    | ✅    | GET    | appStoreVersions/{id}/routingAppCoverage           |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/idfaDeclaration              |
+| Tunes      | ✅    | GET    | appStoreVersions/{id}/routingAppCoverage           |
 </details>
 
 <details><summary>Apps</summary>
@@ -289,15 +296,15 @@
 | TestFlight | ❌    | GET    | betaBuildLocalizations/{id}/build |
 </details>
 
-<details><summary>BetaGroups</summary>
+<details><summary>BetaGroups ❌</summary>
 
 | Module     | Added | Type   | Endpoint                                  |
 | ---------- | :---: | ------ | ----------------------------------------- |
 | TestFlight | ✅    | GET    | betaGroups                                |
-| TestFlight | ❌    | POST   | betaGroups                                |
+| TestFlight | ✅    | POST   | betaGroups                                |
 | TestFlight | ❌    | GET    | betaGroups/{id}                           |
-| TestFlight | ❌    | PATCH  | betaGroups/{id}                           |
-| TestFlight | ❌    | DELETE | betaGroups/{id}                           |
+| TestFlight | ✅    | PATCH  | betaGroups/{id}                           |
+| TestFlight | ✅    | DELETE | betaGroups/{id}                           |
 | TestFlight | ❌    | GET    | betaGroups/{id}/app                       |
 | TestFlight | ❌    | GET    | betaGroups/{id}/relationships/betaTesters |
 | TestFlight | ❌    | POST   | betaGroups/{id}/relationships/betaTesters |
@@ -306,10 +313,10 @@
 | TestFlight | ❌    | GET    | betaGroups/{id}/relationships/builds      |
 | TestFlight | ❌    | POST   | betaGroups/{id}/relationships/builds      |
 | TestFlight | ❌    | DELETE | betaGroups/{id}/relationships/builds      |
-| TestFlight | ❌    | GET    | betaGroups/{id}/builds                    |
+| TestFlight | ✅    | GET    | betaGroups/{id}/builds                    |
 </details>
 
-<details><summary>BetaLicenseAgreements</summary>
+<details><summary>BetaLicenseAgreements ❌</summary>
 
 | Module     | Added | Type   | Endpoint                       |
 | ---------- | :---: | ------ | ------------------------------ |
@@ -319,7 +326,7 @@
 | TestFlight | ❌    | GET    | betaLicenseAgreements/{id}/app |
 </details>
 
-<details><summary>BetaTesterInvitations</summary>
+<details><summary>BetaTesterInvitations ❌</summary>
 
 | Module     | Added | Type   | Endpoint              |
 | ---------- | :---: | ------ | --------------------- |
@@ -330,16 +337,16 @@
 
 | Module     | Added | Type   | Endpoint                                  |
 | ---------- | :---: | ------ | ----------------------------------------- |
-| TestFlight | ❌    | GET    | betaTesters                               |
+| TestFlight | ✅    | GET    | betaTesters                               |
 | TestFlight | ❌    | POST   | betaTesters                               |
 | TestFlight | ❌    | GET    | betaTesters/{id}                          |
 | TestFlight | ❌    | DELETE | betaTesters/{id}                          |
 | TestFlight | ❌    | GET    | betaTesters/{id}/relationships/apps       |
-| TestFlight | ❌    | DELETE | betaTesters/{id}/relationships/apps       |
+| TestFlight | ✅    | DELETE | betaTesters/{id}/relationships/apps       |
 | TestFlight | ❌    | GET    | betaTesters/{id}/apps                     |
 | TestFlight | ❌    | GET    | betaTesters/{id}/relationships/betaGroups |
 | TestFlight | ❌    | PATCH  | betaTesters/{id}/relationships/betaGroups |
-| TestFlight | ❌    | DELETE | betaTesters/{id}/relationships/betaGroups |
+| TestFlight | ✅    | DELETE | betaTesters/{id}/relationships/betaGroups |
 | TestFlight | ❌    | GET    | betaTesters/{id}/betaGroups               |
 | TestFlight | ❌    | GET    | betaTesters/{id}/relationships/builds     |
 | TestFlight | ❌    | PATCH  | betaTesters/{id}/relationships/builds     |
@@ -351,13 +358,13 @@
 
 | Module     | Added | Type   | Endpoint                    |
 | ---------- | :---: | ------ | --------------------------- |
-| TestFlight | ❌    | GET    | buildBetaDetails            |
+| TestFlight | ✅    | GET    | buildBetaDetails            |
 | TestFlight | ❌    | GET    | buildBetaDetails/{id}       |
-| TestFlight | ❌    | PATCH  | buildBetaDetails/{id}       |
+| TestFlight | ✅    | PATCH  | buildBetaDetails/{id}       |
 | TestFlight | ❌    | GET    | buildBetaDetails/{id}/build |
 </details>
 
-<details><summary>BuildBetaNotifications</summary>
+<details><summary>BuildBetaNotifications ❌</summary>
 
 | Module     | Added | Type   | Endpoint               |
 | ---------- | :---: | ------ | ---------------------- |
@@ -368,9 +375,9 @@
 
 | Module     | Added | Type   | Endpoint                                           |
 | ---------- | :---: | ------ | -------------------------------------------------- |
-| TestFlight | ❌    | GET    | builds                                             |
-| TestFlight | ❌    | GET    | builds/{id}                                        |
-| TestFlight | ❌    | PATCH  | builds/{id}                                        |
+| TestFlight | ✅    | GET    | builds                                             |
+| TestFlight | ✅    | GET    | builds/{id}                                        |
+| TestFlight | ✅    | PATCH  | builds/{id}                                        |
 | TestFlight | ❌    | GET    | builds/{id}/app                                    |
 | TestFlight | ❌    | GET    | builds/{id}/relationships/appEncryptionDeclaration |
 | TestFlight | ❌    | PATCH  | builds/{id}/relationships/appEncryptionDeclaration |
@@ -378,7 +385,7 @@
 | TestFlight | ❌    | GET    | builds/{id}/appStoreVersion                        |
 | TestFlight | ❌    | GET    | builds/{id}/betaAppReviewSubmission                |
 | TestFlight | ❌    | GET    | builds/{id}/betaBuildLocalizations                 |
-| TestFlight | ❌    | POST   | builds/{id}/relationships/betaGroups               |
+| TestFlight | ✅    | POST   | builds/{id}/relationships/betaGroups               |
 | TestFlight | ❌    | DELETE | builds/{id}/relationships/betaGroups               |
 | TestFlight | ❌    | GET    | builds/{id}/buildBetaDetail                        |
 | TestFlight | ❌    | GET    | builds/{id}/diagnosticSignatures                   |
@@ -404,9 +411,9 @@
 
 | Module       | Added | Type   | Endpoint                            |
 | ------------ | :---: | ------ | ----------------------------------- |
-| Provisioning | ❌    | GET    | bundleIds                           |
+| Provisioning | ✅    | GET    | bundleIds                           |
 | Provisioning | ❌    | POST   | bundleIds                           |
-| Provisioning | ❌    | GET    | bundleIds/{id}                      |
+| Provisioning | ✅    | GET    | bundleIds/{id}                      |
 | Provisioning | ❌    | PATCH  | bundleIds/{id}                      |
 | Provisioning | ❌    | DELETE | bundleIds/{id}                      |
 | Provisioning | ❌    | GET    | bundleIds/{id}/app                  |
@@ -414,98 +421,98 @@
 | Provisioning | ❌    | GET    | bundleIds/{id}/profiles             |
 </details>
 
-<details><summary>Certificates</summary>
+<details><summary>Certificates ✅</summary>
 
 | Module       | Added | Type   | Endpoint          |
 | ------------ | :---: | ------ | ----------------- |
-| Provisioning | ❌    | GET    | certificates      |
-| Provisioning | ❌    | POST   | certificates      |
-| Provisioning | ❌    | GET    | certificates/{id} |
-| Provisioning | ❌    | DELETE | certificates/{id} |
+| Provisioning | ✅    | GET    | certificates      |
+| Provisioning | ✅    | POST   | certificates      |
+| Provisioning | ✅    | GET    | certificates/{id} |
+| Provisioning | ✅    | DELETE | certificates/{id} |
 </details>
 
-<details><summary>Devices</summary>
+<details><summary>Devices ❌</summary>
 
-| Module   | Added | Type   | Endpoint     |
-| -------- | :---: | ------ | ------------ |
-| Tunes    | ❌    | GET    | devices      |
-| Tunes    | ❌    | POST   | devices      |
-| Tunes    | ❌    | GET    | devices/{id} |
-| Tunes    | ❌    | PATCH  | devices/{id} |
+| Module       | Added | Type   | Endpoint     |
+| ------------ | :---: | ------ | ------------ |
+| Provisioning | ✅    | GET    | devices      |
+| Provisioning | ✅    | POST   | devices      |
+| Provisioning | ❌    | GET    | devices/{id} |
+| Provisioning | ❌    | PATCH  | devices/{id} |
 </details>
 
-<details><summary>EndUserLicenseAgreements</summary>
+<details><summary>EndUserLicenseAgreements ❌</summary>
 
 | Module   | Added | Type   | Endpoint                                  |
 | -------- | :---: | ------ | ----------------------------------------- |
-| Tunes    | ❌    | POST   | endUserLicenseAgreements                  |
-| Tunes    | ❌    | GET    | endUserLicenseAgreements/{id}             |
-| Tunes    | ❌    | PATCH  | endUserLicenseAgreements/{id}             |
-| Tunes    | ❌    | DELETE | endUserLicenseAgreements/{id}             |
-| Tunes    | ❌    | GET    | endUserLicenseAgreements/{id}/territories |
+| ?        | ❌    | POST   | endUserLicenseAgreements                  |
+| ?        | ❌    | GET    | endUserLicenseAgreements/{id}             |
+| ?        | ❌    | PATCH  | endUserLicenseAgreements/{id}             |
+| ?        | ❌    | DELETE | endUserLicenseAgreements/{id}             |
+| ?        | ❌    | GET    | endUserLicenseAgreements/{id}/territories |
 </details>
 
-<details><summary>FinanceReports</summary>
+<details><summary>FinanceReports ❌</summary>
 
 | Module   | Added | Type   | Endpoint       |
 | -------- | :---: | ------ | -------------- |
-| Tunes    | ❌    | GET    | financeReports |
+| ?        | ❌    | GET    | financeReports |
 </details>
 
 <details><summary>IdfaDeclarations ✅</summary>
 
 | Module   | Added | Type   | Endpoint              |
 | -------- | :---: | ------ | --------------------- |
-| Tunes    | ❌    | POST   | idfaDeclarations.     |
-| Tunes    | ❌    | PATCH  | idfaDeclarations/{id} |
-| Tunes    | ❌    | DELETE | idfaDeclarations/{id} |
+| Tunes    | ✅    | POST   | idfaDeclarations      |
+| Tunes    | ✅    | PATCH  | idfaDeclarations/{id} |
+| Tunes    | ✅    | DELETE | idfaDeclarations/{id} |
 </details>
 
-<details><summary>InAppPurchases</summary>
+<details><summary>InAppPurchases ❌</summary>
 
 | Module   | Added | Type   | Endpoint            |
 | -------- | :---: | ------ | ------------------- |
-| Tunes    | ❌    | GET    | inAppPurchases/{id} |
+| ?        | ❌    | GET    | inAppPurchases/{id} |
 </details>
 
 <details><summary>PreReleaseVersions</summary>
 
-| Module   | Added | Type   | Endpoint                       |
-| -------- | :---: | ------ | ------------------------------ |
-| Tunes    | ❌    | GET    | preReleaseVersions             |
-| Tunes    | ❌    | GET    | preReleaseVersions/{id}        |
-| Tunes    | ❌    | GET    | preReleaseVersions/{id}/app    |
-| Tunes    | ❌    | GET    | preReleaseVersions/{id}/builds |
+| Module     | Added | Type   | Endpoint                       |
+| ---------- | :---: | ------ | ------------------------------ |
+| TestFlight | ✅    | GET    | preReleaseVersions             |
+| TestFlight | ❌    | GET    | preReleaseVersions/{id}        |
+| TestFlight | ❌    | GET    | preReleaseVersions/{id}/app    |
+| TestFlight | ❌    | GET    | preReleaseVersions/{id}/builds |
 </details>
 
-<details><summary>Profiles</summary>
+<details><summary>Profiles ❌</summary>
 
 | Module       | Added | Type   | Endpoint                   |
 | ------------ | :---: | ------ | -------------------------- |
-| Provisioning | ❌    | GET    | profiles                   |
-| Provisioning | ❌    | POST   | profiles                   |
+| Provisioning | ✅    | GET    | profiles                   |
+| Provisioning | ✅    | POST   | profiles                   |
 | Provisioning | ❌    | GET    | profiles/{id}              |
-| Provisioning | ❌    | DELETE | profiles/{id}              |
+| Provisioning | ✅    | DELETE | profiles/{id}              |
 | Provisioning | ❌    | GET    | profiles/{id}/bundleId     |
 | Provisioning | ❌    | GET    | profiles/{id}/certificates |
-| Provisioning | ❌    | GET    | profiles/{id}/devices      |
+| Provisioning | ✅    | GET    | profiles/{id}/devices      |
 </details>
 
-<details><summary>RoutingAppCoverages</summary>
+<details><summary>RoutingAppCoverages ❌</summary>
 
 | Module   | Added | Type   | Endpoint                 |
 | -------- | :---: | ------ | ------------------------ |
-| Tunes    | ❌    | POST   | routingAppCoverages      |
-| Tunes    | ❌    | GET    | routingAppCoverages/{id} |
-| Tunes    | ❌    | PATCH  | routingAppCoverages/{id} |
-| Tunes    | ❌    | DELETE | routingAppCoverages/{id} |
+| ?        | ❌    | POST   | routingAppCoverages      |
+| ?        | ❌    | GET    | routingAppCoverages/{id} |
+| ?        | ❌    | PATCH  | routingAppCoverages/{id} |
+| ?        | ❌    | DELETE | routingAppCoverages/{id} |
 </details>
 
-<details><summary>SalesReports</summary>
+<details><summary>SalesReports ❌</summary>
 
 | Module   | Added | Type   | Endpoint |
 | -------- | :---: | ------ | -------- |
-| Tunes    | ❌    | GET    | salesReports |
+| ?        | ❌    | GET    | salesReports |
 </details>
 
 <details><summary>Territories ✅</summary>
@@ -519,10 +526,10 @@
 
 | Module   | Added | Type   | Endpoint                         |
 | -------- | :---: | ------ | -------------------------------- |
-| Users    | ❌    | GET    | userInvitations                  |
-| Users    | ❌    | POST   | userInvitations                  |
+| Users    | ✅    | GET    | userInvitations                  |
+| Users    | ✅    | POST   | userInvitations                  |
 | Users    | ❌    | GET    | userInvitations/{id}             |
-| Users    | ❌    | DELETE | userInvitations/{id}             |
+| Users    | ✅    | DELETE | userInvitations/{id}             |
 | Users    | ❌    | GET    | userInvitations/{id}/visibleApps |
 </details>
 
@@ -530,32 +537,32 @@
 
 | Module   | Added | Type   | Endpoint                             |
 | -------- | :---: | ------ | ------------------------------------ |
-| Users    | ❌    | GET    | users                                |
+| Users    | ✅    | GET    | users                                |
 | Users    | ❌    | GET    | users/{id}                           |
 | Users    | ❌    | PATCH  | users/{id}                           |
-| Users    | ❌    | DELETE | users/{id}                           |
+| Users    | ✅    | DELETE | users/{id}                           |
 | Users    | ❌    | GET    | users/{id}/relationships/visibleApps |
-| Users    | ❌    | POST   | users/{id}/relationships/visibleApps |
+| Users    | ✅    | POST   | users/{id}/relationships/visibleApps |
 | Users    | ❌    | PATCH  | users/{id}/relationships/visibleApps |
 | Users    | ❌    | DELETE | users/{id}/relationships/visibleApps |
 | Users    | ❌    | GET    | users/{id}/visibleApps               |
 </details>
 
-<details><summary>DiagnosticSignatures</summary>
+<details><summary>DiagnosticSignatures ❌</summary>
 
 | Module   | Added | Type   | Endpoint                       |
 | -------- | :---: | ------ | ------------------------------ |
-| Tunes    | ❌    | GET    | diagnosticSignatures/{id}/logs |
+| ?        | ❌    | GET    | diagnosticSignatures/{id}/logs |
 </details>
 
-<details><summary>GameCenterEnabledVersions</summary>
+<details><summary>GameCenterEnabledVersions ❌</summary>
 
 | Module   | Added | Type   | Endpoint                                                        |
 | -------- | :---: | ------ | --------------------------------------------------------------- |
-| Tunes    | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
-| Tunes    | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
-| Tunes    | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
-| Tunes    | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
-| Tunes    | ❌    | GET    | gameCenterEnabledVersions/{id}/compatibleVersions               |
+| ?        | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| ?        | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| ?        | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| ?        | ❌    | GET    | gameCenterEnabledVersions/{id}/relationships/compatibleVersions |
+| ?        | ❌    | GET    | gameCenterEnabledVersions/{id}/compatibleVersions               |
 </details>
 
