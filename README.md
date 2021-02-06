@@ -20,14 +20,14 @@
 | Tunes | ? | DELETE | sandboxTesters/#{sandbox_tester_id} |
 
 
-<details><summary>AgeRatingDeclarations</summary>
+<details><summary>AgeRatingDeclarations ✅</summary>
 
-| Module   | Added | Type   | Endpoint                                           |
-| -------- | :---: | ------ | -------------------------------------------------- |
-| Tunes    | ✅    | PATCH  | ageRatingDeclarations/#{age_rating_declaration_id} |
+| Module   | Added | Type   | Endpoint                   |
+| -------- | :---: | ------ | -------------------------- |
+| Tunes    | ✅    | PATCH  | ageRatingDeclarations/{id} |
 </details>
 
-<details><summary>AppCategories</summary>
+<details><summary>AppCategories ❌</summary>
 
 | Module   | Added | Type   | Endpoint                         |
 | -------- | :---: | ------ | -------------------------------- |
@@ -37,7 +37,7 @@
 | Tunes    | ❌    | GET    | appCategories/{id}/subcategories |
 </details>
 
-<details><summary>AppEncryptionDeclarations</summary>
+<details><summary>AppEncryptionDeclarations ❌</summary>
 
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
@@ -47,7 +47,7 @@
 | Tunes    | ❌    | POST   | appEncryptionDeclarations/{id}/relationships/builds |
 </details>
 
-<details><summary>AppInfoLocalizations</summary>
+<details><summary>AppInfoLocalizations ❌</summary>
 
 | Module   | Added | Type   | Endpoint                  |
 | -------- | :---: | ------ | ------------------------- |
@@ -57,7 +57,7 @@
 | Tunes    | ❌    | DELETE | appInfoLocalizations/{id} |
 </details>
 
-<details><summary>AppInfos</summary>
+<details><summary>AppInfos ❌</summary>
 
 | Module   | Added | Type   | Endpoint                              |
 | -------- | :---: | ------ | ------------------------------------- |
@@ -72,7 +72,7 @@
 | Tunes    | ❌    | GET    | appInfos/{id}/secondarySubcategoryTwo |
 </details>
 
-<details><summary>AppPreOrders</summary>
+<details><summary>AppPreOrders ❌</summary>
 
 | Module   | Added | Type   | Endpoint          |
 | -------- | :---: | ------ | ----------------- |
