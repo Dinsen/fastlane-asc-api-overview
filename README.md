@@ -1,5 +1,5 @@
 
-### App Store Connect API v1.2 implementation overview
+### App Store Connect API v1.2 implementation overview in <a href="https://github.com/fastlane/fastlane">fastlane</a>
 
 Not part of the official documentation
 | Module | Implemented | Type | Endpoint |
