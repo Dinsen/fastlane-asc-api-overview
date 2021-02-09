@@ -402,9 +402,9 @@ Not part of the official documentation
 
 | Module       | Added | Type   | Endpoint                  |
 | ------------ | :---: | ------ | ------------------------- |
-| Provisioning | ❌    | POST   | bundleIdCapabilities      |
+| Provisioning | ✅    | POST   | bundleIdCapabilities      |
 | Provisioning | ❌    | PATCH  | bundleIdCapabilities/{id} |
-| Provisioning | ❌    | DELETE | bundleIdCapabilities/{id} |
+| Provisioning | ✅    | DELETE | bundleIdCapabilities/{id} |
 </details>
 
 <details><summary>BundleIds</summary>
@@ -412,12 +412,12 @@ Not part of the official documentation
 | Module       | Added | Type   | Endpoint                            |
 | ------------ | :---: | ------ | ----------------------------------- |
 | Provisioning | ✅    | GET    | bundleIds                           |
-| Provisioning | ❌    | POST   | bundleIds                           |
+| Provisioning | ✅    | POST   | bundleIds                           |
 | Provisioning | ✅    | GET    | bundleIds/{id}                      |
 | Provisioning | ❌    | PATCH  | bundleIds/{id}                      |
 | Provisioning | ❌    | DELETE | bundleIds/{id}                      |
 | Provisioning | ❌    | GET    | bundleIds/{id}/app                  |
-| Provisioning | ❌    | GET    | bundleIds/{id}/bundleIdCapabilities |
+| Provisioning | ✅    | GET    | bundleIds/{id}/bundleIdCapabilities |
 | Provisioning | ❌    | GET    | bundleIds/{id}/profiles             |
 </details>
 
