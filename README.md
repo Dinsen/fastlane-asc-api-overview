@@ -95,7 +95,7 @@ Not part of the official documentation
 | -------- | :---: | ------ | --------------------------------------------- |
 | Tunes    | ✅    | POST   | appPreviewSets                                |
 | Tunes    | ✅    | GET    | appPreviewSets/{id}                           |
-| Tunes    | ❌    | DELETE | appPreviewSets/{id}                           |
+| Tunes    | ✅    | DELETE | appPreviewSets/{id}                           |
 | Tunes    | ❌    | GET    | appPreviewSets/{id}/relationships/appPreviews |
 | Tunes    | ✅    | PATCH  | appPreviewSets/{id}/relationships/appPreviews |
 | Tunes    | ❌    | GET    | appPreviewSets/{id}/appPreviews               |
@@ -142,7 +142,7 @@ Not part of the official documentation
 | -------- | :---: | ------ | --------------------------------------------------- |
 | Tunes    | ✅    | POST   | appScreenshotSets                                   |
 | Tunes    | ✅    | GET    | appScreenshotSets/{id}                              |
-| Tunes    | ❌    | DELETE | appScreenshotSets/{id}                              |
+| Tunes    | ✅    | DELETE | appScreenshotSets/{id}                              |
 | Tunes    | ❌    | GET    | appScreenshotSets/{id}/relationships/appScreenshots |
 | Tunes    | ✅    | PATCH  | appScreenshotSets/{id}/relationships/appScreenshots |
 | Tunes    | ❌    | GET    | appScreenshotSets/{id}/appScreenshots               |
@@ -183,7 +183,7 @@ Not part of the official documentation
 | Module   | Added | Type   | Endpoint                                            |
 | -------- | :---: | ------ | --------------------------------------------------- |
 | Tunes    | ✅    | POST   | appStoreVersionLocalizations                        |
-| Tunes    | ❌    | GET    | appStoreVersionLocalizations/{id}                   |
+| Tunes    | ✅    | GET    | appStoreVersionLocalizations/{id}                   |
 | Tunes    | ✅    | PATCH  | appStoreVersionLocalizations/{id}                   |
 | Tunes    | ✅    | DELETE | appStoreVersionLocalizations/{id}                   |
 | Tunes    | ❌    | GET    | appStoreVersionLocalizations/{id}/appPreviewSets    |
