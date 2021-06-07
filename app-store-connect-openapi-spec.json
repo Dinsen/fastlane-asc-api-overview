@@ -12,7 +12,7 @@
   
   "info" : {
     "title" : "App Store Connect API",
-    "version" : "1.3",
+    "version" : "1.4",
     "x-platform" : "app_store_connect_api"
   },
 
@@ -12401,7 +12401,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT" ]
+              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
             }
           },
           "style" : "form",
@@ -12759,7 +12759,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT" ]
+              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
             }
           },
           "style" : "form",
@@ -17110,7 +17110,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION" ]
+              "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION", "TERMINATION" ]
             }
           },
           "style" : "form",
@@ -20265,7 +20265,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION" ]
+              "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION", "TERMINATION" ]
             }
           },
           "style" : "form",
@@ -30597,7 +30597,7 @@
               },
               "metricType" : {
                 "type" : "string",
-                "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION" ]
+                "enum" : [ "DISK", "HANG", "BATTERY", "LAUNCH", "MEMORY", "ANIMATION", "TERMINATION" ]
               },
               "deviceType" : {
                 "type" : "string"
@@ -32684,7 +32684,7 @@
       },
       "UserRole" : {
         "type" : "string",
-        "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT" ]
+        "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
       }
     },
     "securitySchemes" : {
