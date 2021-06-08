@@ -12,7 +12,7 @@
   
   "info" : {
     "title" : "App Store Connect API",
-    "version" : "1.4",
+    "version" : "1.4.1",
     "x-platform" : "app_store_connect_api"
   },
 
@@ -12401,7 +12401,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
+              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_MANAGED_DEVELOPER_ID", "CLOUD_MANAGED_APP_DISTRIBUTION" ]
             }
           },
           "style" : "form",
@@ -12759,7 +12759,7 @@
             "type" : "array",
             "items" : {
               "type" : "string",
-              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
+              "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_MANAGED_DEVELOPER_ID", "CLOUD_MANAGED_APP_DISTRIBUTION" ]
             }
           },
           "style" : "form",
@@ -32684,7 +32684,7 @@
       },
       "UserRole" : {
         "type" : "string",
-        "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_SIGNING_DEVELOPER_ID", "CLOUD_SIGNING_APP_DISTRIBUTION" ]
+        "enum" : [ "ADMIN", "FINANCE", "TECHNICAL", "ACCOUNT_HOLDER", "READ_ONLY", "SALES", "MARKETING", "APP_MANAGER", "DEVELOPER", "ACCESS_TO_REPORTS", "CUSTOMER_SUPPORT", "CREATE_APPS", "CLOUD_MANAGED_DEVELOPER_ID", "CLOUD_MANAGED_APP_DISTRIBUTION" ]
       }
     },
     "securitySchemes" : {
